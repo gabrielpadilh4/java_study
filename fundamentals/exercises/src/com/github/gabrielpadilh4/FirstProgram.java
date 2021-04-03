@@ -2,7 +2,7 @@ package com.github.gabrielpadilh4;
 
 public class FirstProgram {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         String version;
 
@@ -10,6 +10,6 @@ public class FirstProgram {
 
         System.out.println("First Programm using Java: " + version);
     }
-    
+
 
 }
