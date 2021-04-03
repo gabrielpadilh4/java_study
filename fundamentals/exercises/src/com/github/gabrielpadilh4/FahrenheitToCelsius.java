@@ -10,11 +10,11 @@ public class FahrenheitToCelsius {
         double fahrenheit;
         double celsius;
 
-        fahrenheit = 84;
+        fahrenheit = 86;
 
         celsius = (fahrenheit - ADJUSTMENT) * FACTOR;
 
-        System.out.println(celsius);
+        System.out.println("The result is " + celsius + "°C");
 
     }
 }
