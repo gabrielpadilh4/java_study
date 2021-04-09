@@ -5,12 +5,14 @@ package com.github.gabrielpadilh4.control_structures.exercises;
 public class CheckPrimeNumber {
 
     public static void main(String[] args) {
-        int number = 20;
+        int number = 607;
 
-        boolean isPrimeNumber = false;
+        boolean isPrimeNumber = true;
 
-        if(number%2 != 0){
-            isPrimeNumber = true;
+        for (int i = 2; i < number; i++){
+            if(number%i == 0){
+                isPrimeNumber = false;
+            }
         }
 
         System.out.println(isPrimeNumber);
