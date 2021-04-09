@@ -1,4 +1,4 @@
-package com.github.gabrielpadilh4;
+package com.github.gabrielpadilh4.operators;
 
 import javax.swing.*;
 

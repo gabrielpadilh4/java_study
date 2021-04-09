@@ -1,4 +1,4 @@
-package com.github.gabrielpadilh4;
+package com.github.gabrielpadilh4.types;
 
 public class PrimitiveTypes {
 
