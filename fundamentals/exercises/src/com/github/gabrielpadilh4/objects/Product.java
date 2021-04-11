@@ -6,8 +6,15 @@ public class Product {
     double price;
     double discount;
 
+    Product(String initialName) {
+        name = initialName;
+    }
+
+    Product() {
+    }
+
     double finalPrice() {
-        return  price * (1 - discount);
+        return price * (1 - discount);
     }
 
 }

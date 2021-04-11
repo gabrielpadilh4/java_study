@@ -4,9 +4,8 @@ public class ProductTest {
 
     public static void main(String[] args) {
 
-        Product product1 = new Product();
+        Product product1 = new Product("notebook");
 
-        product1.name = "notebook";
         product1.price = 4356.89;
         product1.discount = 0.25;
 
