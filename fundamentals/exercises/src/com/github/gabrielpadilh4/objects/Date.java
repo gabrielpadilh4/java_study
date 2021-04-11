@@ -6,8 +6,8 @@ public class Date {
     int month;
     int year;
 
-    public String toString(){
-        return day+"/"+month+"/"+year;
+    public String toString() {
+        return String.format("%d/%d/%d", day, month, year);
     }
 
 }
