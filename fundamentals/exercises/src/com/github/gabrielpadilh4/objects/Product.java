@@ -6,4 +6,8 @@ public class Product {
     double price;
     double discount;
 
+    double finalPrice() {
+        return  price * (1 - discount);
+    }
+
 }

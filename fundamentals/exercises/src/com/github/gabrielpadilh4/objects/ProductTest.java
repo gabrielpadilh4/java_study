@@ -12,9 +12,9 @@ public class ProductTest {
 
         System.out.println(product1.name);
 
-        double calculatedPrice = product1.price * (1 - product1.discount);
+        double finalPrice = product1.finalPrice();
 
-        System.out.printf("Price %.2f", calculatedPrice);
+        System.out.printf("Price %.2f", finalPrice);
 
     }
 }
