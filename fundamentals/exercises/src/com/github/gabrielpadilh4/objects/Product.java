@@ -4,7 +4,7 @@ public class Product {
 
     String name;
     double price;
-    double discount;
+    static double discount = 0.25;
 
     Product(String initialName) {
         name = initialName;

@@ -7,7 +7,10 @@ public class ProductTest {
         Product product1 = new Product("notebook");
 
         product1.price = 4356.89;
-        product1.discount = 0.25;
+
+        Product.discount = 0.35; // Change the class value for all instances
+
+        // product1.discount = 0.35; It change the value of class for all instances
 
         System.out.println(product1.name);
 
