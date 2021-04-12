@@ -6,6 +6,8 @@ public class Date {
     int month;
     int year;
 
+    final String FORMAT = "%d/%d/%d";
+
     Date() {
         this(1, 1, 170);
     }
@@ -17,7 +19,7 @@ public class Date {
     }
 
     public String toString() {
-        return String.format("%d/%d/%d", this.day, this.month, this.year);
+        return String.format(FORMAT, this.day, this.month, this.year);
     }
 
 }
