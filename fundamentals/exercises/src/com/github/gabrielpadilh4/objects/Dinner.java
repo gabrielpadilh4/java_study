@@ -19,7 +19,7 @@ public class Dinner {
         person.eat(banana);
         person.eat(orange);
 
-        System.out.printf("Person weight after eat: %.2f", person.weight);
+        System.out.printf("Person weight after eat: %.2f ", person.weight);
 
     }
 }
