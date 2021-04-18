@@ -3,6 +3,7 @@ package com.github.gabrielpadilh4.arrays_and_collections;
 import java.util.LinkedList;
 import java.util.Queue;
 
+// FIFO
 public class QueueExample {
 
     public static void main(String[] args) {
