@@ -4,6 +4,12 @@ public class Car {
 
     int currentSpeed;
 
+    final String CAR_NAME;
+
+    Car(String name){
+        this.CAR_NAME = name;
+    }
+
     void speedUp() {
         currentSpeed++;
     }
