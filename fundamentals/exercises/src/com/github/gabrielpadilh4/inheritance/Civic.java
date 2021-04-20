@@ -5,7 +5,7 @@ public class Civic extends Car {
     //final static String CAR_NAME = "Civic";
 
     Civic(){
-        super("Civic");
+        super("Civic", 250);
     }
 
     void speedUp() {
