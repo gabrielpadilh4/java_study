@@ -8,7 +8,7 @@ public class Corsa extends Car {
         super("Corsa", 180);
     }
 
-    void speedUp() {
+    public void speedUp() {
         currentSpeed += 3;
     }
 }

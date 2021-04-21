@@ -2,24 +2,24 @@ package com.github.gabrielpadilh4.inheritance;
 
 public class Car {
 
-    int currentSpeed;
+    public int currentSpeed;
 
-    final String CAR_NAME;
-    final int MAX_SPEED;
+    public final String CAR_NAME;
+    private final int MAX_SPEED;
 
     Car(String name, int maxSpeed){
         this.CAR_NAME = name;
         this.MAX_SPEED = maxSpeed;
     }
 
-    void speedUp() {
+    public void speedUp() {
         if(currentSpeed == MAX_SPEED){
             return;
         }
         currentSpeed++;
     }
 
-    void brake() {
+    public void brake() {
         if (currentSpeed > 0)
             currentSpeed--;
     }

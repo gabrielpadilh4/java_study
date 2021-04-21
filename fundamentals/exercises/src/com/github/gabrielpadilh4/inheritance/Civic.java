@@ -8,7 +8,7 @@ public class Civic extends Car {
         super("Civic", 250);
     }
 
-    void speedUp() {
+    public void speedUp() {
         currentSpeed += 10;
     }
 }
