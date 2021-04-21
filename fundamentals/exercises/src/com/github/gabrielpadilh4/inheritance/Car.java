@@ -2,25 +2,33 @@ package com.github.gabrielpadilh4.inheritance;
 
 public class Car {
 
-    public int currentSpeed;
+    private int currentSpeed;
 
-    public final String CAR_NAME;
-    private final int MAX_SPEED;
+    protected final String CAR_NAME;
+    protected final int MAX_SPEED;
 
-    Car(String name, int maxSpeed){
+    Car(String name, int maxSpeed) {
         this.CAR_NAME = name;
         this.MAX_SPEED = maxSpeed;
     }
 
-    public void speedUp() {
-        if(currentSpeed == MAX_SPEED){
+    protected void speedUp() {
+        if (getCurrentSpeed() == MAX_SPEED) {
             return;
         }
-        currentSpeed++;
+        setCurrentSpeed(getCurrentSpeed() + 1);
     }
 
-    public void brake() {
-        if (currentSpeed > 0)
-            currentSpeed--;
+    protected void brake() {
+        if (getCurrentSpeed() > 0)
+            setCurrentSpeed(getCurrentSpeed() - 1);
+    }
+
+    protected void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
+    protected int getCurrentSpeed() {
+        return currentSpeed;
     }
 }

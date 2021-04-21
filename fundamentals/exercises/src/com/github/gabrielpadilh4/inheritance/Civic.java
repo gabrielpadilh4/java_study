@@ -4,11 +4,11 @@ public class Civic extends Car {
 
     //final static String CAR_NAME = "Civic";
 
-    Civic(){
+    Civic() {
         super("Civic", 250);
     }
 
     public void speedUp() {
-        currentSpeed += 10;
+        setCurrentSpeed(getCurrentSpeed() + 10);
     }
 }

@@ -7,14 +7,14 @@ public class CarTest {
 
         Corsa corsa = new Corsa();
 
-        System.out.println(civic.CAR_NAME + " " + civic.currentSpeed);
-        System.out.println(corsa.CAR_NAME + " " + civic.currentSpeed);
+        System.out.println(civic.CAR_NAME + " " + civic.getCurrentSpeed());
+        System.out.println(corsa.CAR_NAME + " " + civic.getCurrentSpeed());
 
         civic.speedUp();
         corsa.speedUp();
 
-        System.out.println(civic.CAR_NAME + " " + civic.currentSpeed);
-        System.out.println(corsa.CAR_NAME + " " + corsa.currentSpeed);
+        System.out.println(civic.CAR_NAME + " " + civic.getCurrentSpeed());
+        System.out.println(corsa.CAR_NAME + " " + corsa.getCurrentSpeed());
 
         civic.brake();
         corsa.brake();
@@ -22,8 +22,8 @@ public class CarTest {
         corsa.brake();
         corsa.brake();
 
-        System.out.println(civic.CAR_NAME + " " + civic.currentSpeed);
-        System.out.println(corsa.CAR_NAME + " " + corsa.currentSpeed);
+        System.out.println(civic.CAR_NAME + " " + civic.getCurrentSpeed());
+        System.out.println(corsa.CAR_NAME + " " + corsa.getCurrentSpeed());
 
     }
 }
