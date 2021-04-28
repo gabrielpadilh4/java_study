@@ -37,9 +37,9 @@ public class BinaryOperatorChallenge {
         System.out.println("Price with ship value: " + priceDiscount.andThen(taxes).andThen(withShipValue).apply(p.getPrice(), p.getDiscount()));
 
         // trunc value
-        UnaryOperator<Double> truncValue = (Double value) -> Double.parseDouble(String.format("%.2f", value).replace(",","."));
+        UnaryOperator<Double> truncValue = (Double value) -> Double.parseDouble(String.format("%.2f", value).replace(",", "."));
 
-        Function<Double, String> format = (Double value) -> ("R$" + value).replace(".",",");
+        Function<Double, String> format = (Double value) -> ("R$" + value).replace(".", ",");
 
         System.out.println("Final value: " + priceDiscount.andThen(taxes).andThen(withShipValue).andThen(truncValue).andThen(format).apply(p.getPrice(), p.getDiscount()));
     }
