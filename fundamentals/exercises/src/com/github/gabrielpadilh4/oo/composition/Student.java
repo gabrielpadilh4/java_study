@@ -16,4 +16,12 @@ public class Student {
         course.students.add(this);
         courses.add(course);
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
 }
