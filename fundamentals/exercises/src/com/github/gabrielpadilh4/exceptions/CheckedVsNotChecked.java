@@ -4,7 +4,7 @@ public class CheckedVsNotChecked {
 
     public static void main(String[] args) {
         generateError1();
-        generateError2();
+      //  generateError2();
     }
 
     // Not checked
