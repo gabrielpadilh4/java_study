@@ -1,5 +1,6 @@
 package com.github.gabrielpadilh4;
 
+import com.github.gabrielpadilh4.exceptions.ExplosionException;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -95,6 +96,80 @@ public class FieldTest {
 
         Assertions.assertTrue(result);
 
+    }
+
+    @Test
+    void testDefaultValueMarked() {
+        Assertions.assertFalse(field.isMarked());
+    }
+
+    @Test
+    void testToggleMark() {
+        field.toggleMark();
+        Assertions.assertTrue(field.isMarked());
+    }
+
+    @Test
+    void testToggleMarkTwice() {
+        field.toggleMark();
+        field.toggleMark();
+        Assertions.assertFalse(field.isMarked());
+    }
+
+    @Test
+    void testOpenNotMinNotMarked() {
+        Assertions.assertTrue(field.open());
+    }
+
+    @Test
+    void testOpenNotMineMarked() {
+        field.toggleMark();
+        Assertions.assertFalse(field.open());
+    }
+
+    @Test
+    void testOpenMineMarked() {
+        field.toggleMark();
+        field.toggleMine();
+
+        Assertions.assertFalse(field.open());
+    }
+
+    @Test
+    void testOpenMineNotMarked() {
+        field.toggleMine();
+
+        Assertions.assertThrows(ExplosionException.class, () -> field.open());
+    }
+
+    @Test
+    void testOpenWithNeighbors() {
+        Field neighbor1 = new Field(2, 2);
+        Field neighborOfNeighbor1 = new Field(1, 1);
+
+        neighbor1.addNeighbor(neighborOfNeighbor1);
+
+        field.addNeighbor(neighbor1);
+
+        field.open();
+
+        Assertions.assertTrue(field.isOpen() && neighborOfNeighbor1.isOpen());
+    }
+
+    @Test
+    void testOpenWithNeighborsMarked() {
+        Field neighbor1 = new Field(2, 2);
+        Field neighborOfNeighbor1 = new Field(1, 1);
+
+        neighborOfNeighbor1.toggleMine();
+
+        neighbor1.addNeighbor(neighborOfNeighbor1);
+
+        field.addNeighbor(neighbor1);
+
+        field.open();
+
+        Assertions.assertTrue(field.isOpen() && !neighborOfNeighbor1.isOpen());
     }
 
 }

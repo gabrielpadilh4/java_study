@@ -1,4 +1,6 @@
 com/github/gabrielpadilh4/Board.java
  com.github.gabrielpadilh4.Board
+com/github/gabrielpadilh4/exceptions/ExplosionException.java
+ com.github.gabrielpadilh4.exceptions.ExplosionException
 com/github/gabrielpadilh4/Field.java
  com.github.gabrielpadilh4.Field
