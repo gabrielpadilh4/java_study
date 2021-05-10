@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.github.gabrielpadilh4.FieldTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-05-07T02:06:20" hostname="DESKTOP-FESHEE2" time="0.07">
+<testsuite name="com.github.gabrielpadilh4.FieldTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2021-05-10T02:23:40" hostname="DESKTOP-FESHEE2" time="0.211">
   <properties/>
-  <testcase name="testOpenMineNotMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.07"/>
+  <testcase name="testObjectiveAchieved()" classname="com.github.gabrielpadilh4.FieldTest" time="0.1"/>
+  <testcase name="testOpenMineNotMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.006"/>
+  <testcase name="testToggleMark()" classname="com.github.gabrielpadilh4.FieldTest" time="0.002"/>
+  <testcase name="testNeighborDiagonalDownLeft()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
+  <testcase name="testNeighborDiagonalDownRight()" classname="com.github.gabrielpadilh4.FieldTest" time="0.002"/>
+  <testcase name="testNeighborTop()" classname="com.github.gabrielpadilh4.FieldTest" time="0.0"/>
+  <testcase name="testOpenNotMinNotMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.005"/>
+  <testcase name="testNeighborRight()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
+  <testcase name="testRestartField()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
+  <testcase name="testToggleMarkTwice()" classname="com.github.gabrielpadilh4.FieldTest" time="0.002"/>
+  <testcase name="testOpenWithNeighbors()" classname="com.github.gabrielpadilh4.FieldTest" time="0.005"/>
+  <testcase name="testNeighborDiagonalTopLeft()" classname="com.github.gabrielpadilh4.FieldTest" time="0.003"/>
+  <testcase name="testNeighborDiagonalTopRight()" classname="com.github.gabrielpadilh4.FieldTest" time="0.002"/>
+  <testcase name="testOpenMineMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
+  <testcase name="testNeighborDown()" classname="com.github.gabrielpadilh4.FieldTest" time="0.003"/>
+  <testcase name="testNeighborLeft()" classname="com.github.gabrielpadilh4.FieldTest" time="0.002"/>
+  <testcase name="testGetRowColumn()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
+  <testcase name="testOpenNotMineMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.0"/>
+  <testcase name="testDefaultValueMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
+  <testcase name="testOpenWithNeighborsMarked()" classname="com.github.gabrielpadilh4.FieldTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

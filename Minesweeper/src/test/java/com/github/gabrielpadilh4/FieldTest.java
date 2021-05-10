@@ -172,4 +172,35 @@ public class FieldTest {
         Assertions.assertTrue(field.isOpen() && !neighborOfNeighbor1.isOpen());
     }
 
+    @Test
+    void testGetRowColumn(){
+        field = new Field(1,1);
+
+        Assertions.assertTrue(field.getColumn() == 1 && field.getRow() == 1);
+    }
+
+    @Test
+    void testObjectiveAchieved(){
+        field = new Field(1,1);
+
+        field.open();
+
+        Assertions.assertTrue(field.objectiveAchieved());
+    }
+
+
+    @Test
+    void testRestartField(){
+
+        field = new Field(1,1);
+
+        field.toggleMine();
+        field.toggleMark();
+        field.open();
+
+        field.restartField();
+
+        Assertions.assertTrue(!field.isOpen() && !field.isMarked() && !field.isMine());
+
+    }
 }

@@ -45,6 +45,14 @@ public class Field {
 
     }
 
+    public int getColumn() {
+        return column;
+    }
+
+    public int getRow() {
+        return row;
+    }
+
     void toggleMark() {
         if (!isOpen) {
             marked = !marked;
@@ -75,6 +83,10 @@ public class Field {
         }
     }
 
+    public boolean isMine() {
+        return isMine;
+    }
+
     boolean safeNeighborhood() {
         return neighbors.stream().noneMatch(n -> n.isMine);
     }
@@ -85,5 +97,37 @@ public class Field {
 
     public boolean isOpen() {
         return isOpen;
+    }
+
+    boolean objectiveAchieved(){
+        boolean uncovered = !isMine && isOpen;
+        boolean fieldProtected = isMine && marked;
+
+        return  uncovered || fieldProtected;
+    }
+
+    long neighborsMines(){
+        return neighbors.stream().filter(n -> n.isMine).count();
+    }
+
+    void restartField(){
+        isOpen = false;
+        isMine = false;
+        marked = false;
+    }
+
+    public String toString(){
+
+        if(isOpen && isMine) return "*";
+
+        if(isOpen && neighborsMines() > 0) {
+            return Long.toString(neighborsMines());
+        }
+
+        if(isOpen) return " ";
+
+        if(marked) return "X";
+
+        return "?";
     }
 }
