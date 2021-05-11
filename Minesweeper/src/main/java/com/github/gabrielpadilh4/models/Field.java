@@ -1,4 +1,4 @@
-package com.github.gabrielpadilh4;
+package com.github.gabrielpadilh4.models;
 
 import com.github.gabrielpadilh4.exceptions.ExplosionException;
 
@@ -16,12 +16,12 @@ public class Field {
 
     private final List<Field> neighbors = new ArrayList<>();
 
-    Field(int row, int column) {
+    public Field(int row, int column) {
         this.row = row;
         this.column = column;
     }
 
-    boolean addNeighbor(Field neighbor) {
+    public boolean addNeighbor(Field neighbor) {
         boolean isOtherRow = this.row != neighbor.row;
         boolean isOtherColumn = this.column != neighbor.column;
 
@@ -53,13 +53,13 @@ public class Field {
         return row;
     }
 
-    void toggleMark() {
+    public void toggleMark() {
         if (!isOpen) {
             marked = !marked;
         }
     }
 
-    boolean open() {
+    public boolean open() {
         if (!isOpen && !marked) {
             isOpen = true;
 
@@ -77,8 +77,8 @@ public class Field {
         return false;
     }
 
-    void toggleMine(){
-        if(!isMine){
+    public void toggleMine() {
+        if (!isMine) {
             isMine = true;
         }
     }
@@ -99,34 +99,34 @@ public class Field {
         return isOpen;
     }
 
-    boolean objectiveAchieved(){
+    public boolean objectiveAchieved() {
         boolean uncovered = !isMine && isOpen;
         boolean fieldProtected = isMine && marked;
 
-        return  uncovered || fieldProtected;
+        return uncovered || fieldProtected;
     }
 
-    long neighborsMines(){
+    public long neighborsMines() {
         return neighbors.stream().filter(n -> n.isMine).count();
     }
 
-    void restartField(){
+    public void restartField() {
         isOpen = false;
         isMine = false;
         marked = false;
     }
 
-    public String toString(){
+    public String toString() {
 
-        if(isOpen && isMine) return "*";
+        if (isOpen && isMine) return "*";
 
-        if(isOpen && neighborsMines() > 0) {
+        if (isOpen && neighborsMines() > 0) {
             return Long.toString(neighborsMines());
         }
 
-        if(isOpen) return " ";
+        if (isOpen) return " ";
 
-        if(marked) return "X";
+        if (marked) return "X";
 
         return "?";
     }

@@ -1,2 +1,4 @@
 com/github/gabrielpadilh4/FieldTest.java
  com.github.gabrielpadilh4.FieldTest
+com/github/gabrielpadilh4/BoardTest.java
+ com.github.gabrielpadilh4.BoardTest

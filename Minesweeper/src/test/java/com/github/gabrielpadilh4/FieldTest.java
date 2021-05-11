@@ -1,6 +1,7 @@
 package com.github.gabrielpadilh4;
 
 import com.github.gabrielpadilh4.exceptions.ExplosionException;
+import com.github.gabrielpadilh4.models.Field;
 import org.junit.jupiter.api.Assertions;
 
 import org.junit.jupiter.api.BeforeEach;
