@@ -1,5 +1,7 @@
 package com.github.gabrielpadilh4.models;
 
+import com.github.gabrielpadilh4.exceptions.ExplosionException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Predicate;
@@ -23,7 +25,17 @@ public class Board {
     }
 
     public void openField(int row, int column) {
-        fields.parallelStream().filter(f -> f.getRow() == row && f.getColumn() == column).findFirst().ifPresent(Field::open);
+
+        try{
+            fields.parallelStream().filter(f -> f.getRow() == row && f.getColumn() == column).findFirst().ifPresent(Field::open);
+        }catch(ExplosionException e){
+
+            fields.forEach(f -> f.setOpen(true));
+
+            throw e;
+        }
+
+
     }
 
     public void markField(int row, int column) {
@@ -52,11 +64,12 @@ public class Board {
         Predicate<Field> mined = Field::isMine;
 
         do {
-            minesArmed = fields.stream().filter(mined).count();
 
             int random = (int) (Math.random() * fields.size());
 
             fields.get(random).toggleMine();
+
+            minesArmed = fields.stream().filter(mined).count();
 
         } while (minesArmed < minesCount);
     }
@@ -78,10 +91,18 @@ public class Board {
 
         StringBuilder sb = new StringBuilder();
 
+        sb.append(" ");
+
+        for (int c = 0; c < columns; c++){
+            sb.append(" " + c + " ");
+        }
+
+        sb.append("\n");
+
         int i = 0;
 
         for (int row = 0; row < rows; row++) {
-
+            sb.append(row + " ");
             for (int column = 0; column < columns; column++) {
                 sb.append(" ");
                 sb.append(fields.get(i));

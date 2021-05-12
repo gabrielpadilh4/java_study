@@ -130,4 +130,8 @@ public class Field {
 
         return "?";
     }
+
+    public void  setOpen(boolean open){
+        this.isOpen = open;
+    }
 }

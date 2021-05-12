@@ -1,7 +1,11 @@
-com/github/gabrielpadilh4/exceptions/ExplosionException.java
- com.github.gabrielpadilh4.exceptions.ExplosionException
+com/github/gabrielpadilh4/exceptions/ExitException.java
+ com.github.gabrielpadilh4.exceptions.ExitException
 com/github/gabrielpadilh4/models/Field.java
  com.github.gabrielpadilh4.models.Field
+com/github/gabrielpadilh4/exceptions/ExplosionException.java
+ com.github.gabrielpadilh4.exceptions.ExplosionException
+com/github/gabrielpadilh4/views/BoardConsole.java
+ com.github.gabrielpadilh4.views.BoardConsole
 com/github/gabrielpadilh4/models/Board.java
  com.github.gabrielpadilh4.models.Board
 com/github/gabrielpadilh4/Application.java
