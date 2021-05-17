@@ -20,11 +20,11 @@ public class Field {
         this.column = column;
     }
 
-    public void registerObserver(IFieldObserver observer){
+    public void registerObserver(IFieldObserver observer) {
         observers.add(observer);
     }
 
-    private void notifyObservers(FieldEvent event){
+    private void notifyObservers(FieldEvent event) {
         observers.stream().forEach(e -> e.eventOccur(this, event));
     }
 
@@ -64,7 +64,7 @@ public class Field {
         if (!isOpen) {
             marked = !marked;
 
-            if(marked){
+            if (marked) {
                 notifyObservers(FieldEvent.MARK);
             } else {
                 notifyObservers(FieldEvent.UNMARK);
@@ -101,7 +101,7 @@ public class Field {
         return isMine;
     }
 
-    boolean safeNeighborhood() {
+    public boolean safeNeighborhood() {
         return neighbors.stream().noneMatch(n -> n.isMine);
     }
 
@@ -120,8 +120,8 @@ public class Field {
         return uncovered || fieldProtected;
     }
 
-    public long neighborsMines() {
-        return neighbors.stream().filter(n -> n.isMine).count();
+    public int neighborsMines() {
+        return (int) neighbors.stream().filter(n -> n.isMine).count();
     }
 
     public void restartField() {
@@ -130,10 +130,10 @@ public class Field {
         marked = false;
     }
 
-    public void  setOpen(boolean open){
+    public void setOpen(boolean open) {
         this.isOpen = open;
 
-        if(isOpen){
+        if (isOpen) {
             notifyObservers(FieldEvent.OPEN);
         }
     }

@@ -7,9 +7,9 @@ import java.util.function.Predicate;
 
 public class Board implements IFieldObserver {
 
-    private int rows;
-    private int columns;
-    private int minesCount;
+    private final int rows;
+    private final int columns;
+    private final int minesCount;
 
     private final List<Field> fields = new ArrayList<>();
     private List<Consumer<Boolean>> observers = new ArrayList<>();
@@ -24,12 +24,28 @@ public class Board implements IFieldObserver {
         sortMines();
     }
 
+    public void forEachField(Consumer<Field> function) {
+        fields.forEach(function);
+    }
+
+    public int getRows() {
+        return rows;
+    }
+
+    public int getColumns() {
+        return columns;
+    }
+
+    public int getMinesCount() {
+        return minesCount;
+    }
+
     public void registerObserver(Consumer<Boolean> observer) {
         observers.add(observer);
     }
 
-    private void notifyObservers(boolean reasult) {
-        observers.stream().forEach(b -> b.accept(reasult));
+    private void notifyObservers(boolean result) {
+        observers.stream().forEach(b -> b.accept(result));
     }
 
     public void openField(int row, int column) {
@@ -37,8 +53,9 @@ public class Board implements IFieldObserver {
     }
 
     private void showMines() {
-        fields.stream().filter(f -> f.isMine()).
-                forEach(f -> f.setOpen(true));
+        fields.stream().filter(f -> f.isMine())
+                .filter(f -> !f.isMarked())
+                .forEach(f -> f.setOpen(true));
     }
 
     public void markField(int row, int column) {
@@ -97,8 +114,8 @@ public class Board implements IFieldObserver {
         if (event == FieldEvent.EXPLODE) {
             showMines();
             notifyObservers(false);
-        };
-
-        if (objectiveAchieved()) notifyObservers(true);
+        } else if (objectiveAchieved()) {
+            notifyObservers(true);
+        }
     }
 }
