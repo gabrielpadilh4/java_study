@@ -14,8 +14,11 @@ public class PanelBoard extends JPanel {
         board.forEachField(c -> add(new FieldButton(c)));
 
         board.registerObserver(e -> {
-            // TODO - show results to user
-
+            if (e) {
+                JOptionPane.showMessageDialog(this,"Win");
+            } else {
+                JOptionPane.showMessageDialog(this,"Lose");
+            }
         });
     }
 }
