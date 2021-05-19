@@ -1,8 +1,8 @@
 com/github/gabrielpadilh4/views/Button.java
  com.github.gabrielpadilh4.views.Button
-com/github/gabrielpadilh4/views/Keyboard.java
- com.github.gabrielpadilh4.views.Keyboard
-com/github/gabrielpadilh4/views/Calculator.java
- com.github.gabrielpadilh4.views.Calculator
 com/github/gabrielpadilh4/views/Display.java
  com.github.gabrielpadilh4.views.Display
+com/github/gabrielpadilh4/views/Calculator.java
+ com.github.gabrielpadilh4.views.Calculator
+com/github/gabrielpadilh4/views/Keyboard.java
+ com.github.gabrielpadilh4.views.Keyboard
