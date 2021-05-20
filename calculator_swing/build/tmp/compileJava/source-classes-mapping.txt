@@ -1,8 +1,13 @@
 com/github/gabrielpadilh4/views/Button.java
  com.github.gabrielpadilh4.views.Button
-com/github/gabrielpadilh4/views/Display.java
- com.github.gabrielpadilh4.views.Display
+com/github/gabrielpadilh4/models/IMemoryObserver.java
+ com.github.gabrielpadilh4.models.IMemoryObserver
 com/github/gabrielpadilh4/views/Calculator.java
  com.github.gabrielpadilh4.views.Calculator
+com/github/gabrielpadilh4/models/Memory.java
+ com.github.gabrielpadilh4.models.Memory
+ com.github.gabrielpadilh4.models.Memory$CommandType
+com/github/gabrielpadilh4/views/Display.java
+ com.github.gabrielpadilh4.views.Display
 com/github/gabrielpadilh4/views/Keyboard.java
  com.github.gabrielpadilh4.views.Keyboard

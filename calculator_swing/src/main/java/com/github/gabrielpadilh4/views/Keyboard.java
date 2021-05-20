@@ -1,9 +1,13 @@
 package com.github.gabrielpadilh4.views;
 
+import com.github.gabrielpadilh4.models.Memory;
+
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Keyboard extends JPanel {
+public class Keyboard extends JPanel implements ActionListener {
 
     private final Color DARK_GRAY = new Color(68, 68, 68);
     private final Color GRAY = new Color(97, 100, 99);
@@ -20,7 +24,7 @@ public class Keyboard extends JPanel {
         c.weighty = 1;
         c.fill = GridBagConstraints.BOTH;
 
-        c.gridwidth = 3;
+        c.gridwidth = 2;
         addButton("AC", DARK_GRAY, c, 0, 0);
         c.gridwidth = 1;
         addButton("%", DARK_GRAY, c, 2, 0);
@@ -44,7 +48,7 @@ public class Keyboard extends JPanel {
         c.gridwidth = 2;
         addButton("0", DARK_GRAY, c, 0, 4);
         c.gridwidth = 1;
-        addButton(".", DARK_GRAY, c, 2, 4);
+        addButton(",", DARK_GRAY, c, 2, 4);
         addButton("=", ORANGE, c, 3, 4);
 
     }
@@ -53,6 +57,15 @@ public class Keyboard extends JPanel {
         c.gridx = x;
         c.gridy = y;
         Button button = new Button(text, color);
+        button.addActionListener(this);
         add(button, c);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e){
+        if(e.getSource() instanceof  JButton){
+            JButton button = (JButton) e.getSource();
+            Memory.getInstance().processCommand(button.getText());
+        }
     }
 }
