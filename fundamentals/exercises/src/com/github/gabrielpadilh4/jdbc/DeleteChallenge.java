@@ -9,7 +9,7 @@ public class DeleteChallenge {
 
     public static void main(String[] args) throws SQLException {
 
-        int code;
+        int code, linesAffected;
         String sql = "DELETE FROM people WHERE CODE = ?";
         Connection connection;
         PreparedStatement pstmt;
@@ -25,9 +25,15 @@ public class DeleteChallenge {
 
         pstmt = connection.prepareStatement(sql);
         pstmt.setInt(1, code);
-        pstmt.execute();
 
-        System.out.println("Delete completed");
+        linesAffected = pstmt.executeUpdate();
+
+        if (linesAffected > 0) {
+            System.out.println("Delete completed");
+            System.out.println("Lines deleted: " + linesAffected);
+        } else {
+            System.out.println("Nothing changed");
+        }
 
         pstmt.close();
         connection.close();
