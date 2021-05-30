@@ -9,7 +9,7 @@ public class CarDAO extends DAO {
 
     private final String INSERT_SQL = "INSERT INTO cars(name, brand, year) VALUES (?, ?, ?)";
     private final String UPDATE_SQL = "UPDATE cars SET name = ?, brand = ?, year = ? WHERE code = ?";
-    private final String SELECT_SQL = "SELECT code, name, brand, year FROM cars WHERE code = IFNULL(?, code)";
+    private final String SELECT_SQL = "SELECT code, name, brand, year FROM cars WHERE code = IF(? = 0, code, ?)";
     private final String DELETE_SQL = "DELETE FROM cars WHERE code = ?";
 
     public void createCar(Car car){
@@ -41,12 +41,13 @@ public class CarDAO extends DAO {
         System.out.println("Rows updated: " + rows);
     }
 
-    public List<Car> readCar(int filter){ // TODO - Improve filter
+    public List<Car> readCar(Integer filter){ // TODO - Improve filter
 
         List<Object> parameters = new ArrayList<>();
         List<Car> cars = new ArrayList<>();
 
         parameters.add(filter);
+        parameters.add(filter); // TODO - Improve to avoid duplicated code
 
         ResultSet result = read(SELECT_SQL, parameters.toArray());
 

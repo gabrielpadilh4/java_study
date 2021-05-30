@@ -50,7 +50,9 @@ public class DAO implements ICrud {
 
             PreparedStatement pstmt = getConnection().prepareStatement(sql);
 
-            addParameters(pstmt, parameters);
+            if(parameters.length > 0){
+                addParameters(pstmt, parameters);
+            }
 
             return pstmt.executeQuery();
 
@@ -114,7 +116,6 @@ public class DAO implements ICrud {
                 if (p instanceof Clob) {
                     pstmt.setClob(index, (Clob) p);
                 }
-
                 index++;
             }
         } catch (SQLException e) {
