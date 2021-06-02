@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bf35fb8-8b9d-44fb-95aa-b18ac7fad1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/DeleteUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
