@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bf35fb8-8b9d-44fb-95aa-b18ac7fad1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/GetUsers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/UpdateUser1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/UpdateUser2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/UpdateUser3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +48,7 @@
       <recent name="com.github.gabrielpadilh4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GetUsers">
+  <component name="RunManager" selected="Application.UpdateUser2">
     <configuration name="GetUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.GetUser" />
       <module name="exercises-jpa" />
@@ -88,8 +88,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.Teste" />
+    <configuration name="UpdateUser1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.UpdateUser1" />
+      <module name="exercises-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UpdateUser2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.UpdateUser2" />
       <module name="exercises-jpa" />
       <extension name="coverage">
         <pattern>
@@ -103,10 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UpdateUser2" />
+        <item itemvalue="Application.UpdateUser1" />
         <item itemvalue="Application.GetUsers" />
         <item itemvalue="Application.GetUser" />
         <item itemvalue="Application.NewUser" />
-        <item itemvalue="Application.Teste" />
       </list>
     </recent_temporary>
   </component>
