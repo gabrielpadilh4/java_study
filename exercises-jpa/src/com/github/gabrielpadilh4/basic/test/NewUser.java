@@ -36,6 +36,8 @@ public class NewUser {
             em.getTransaction().begin();
             em.persist(u);
             em.getTransaction().commit();
+
+            System.out.println("Generated ID: " + u.getId());
         }
 
         em.close();
