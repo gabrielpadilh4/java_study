@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bf35fb8-8b9d-44fb-95aa-b18ac7fad1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/GetProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/NewProduct.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/ProductDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/Product.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,6 +42,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.5613748" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -47,7 +52,7 @@
       <recent name="com.github.gabrielpadilh4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DeleteUser">
+  <component name="RunManager" selected="Application.GetProducts">
     <configuration name="DeleteUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.DeleteUser" />
       <module name="exercises-jpa" />
@@ -61,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.GetUser" />
+    <configuration name="GetProducts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.GetProducts" />
       <module name="exercises-jpa" />
       <extension name="coverage">
         <pattern>
@@ -74,8 +79,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetUsers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.GetUsers" />
+    <configuration name="NewProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.NewProduct" />
       <module name="exercises-jpa" />
       <extension name="coverage">
         <pattern>
@@ -115,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetProducts" />
+        <item itemvalue="Application.NewProduct" />
         <item itemvalue="Application.DeleteUser" />
         <item itemvalue="Application.UpdateUser2" />
         <item itemvalue="Application.UpdateUser1" />
-        <item itemvalue="Application.GetUsers" />
-        <item itemvalue="Application.GetUser" />
       </list>
     </recent_temporary>
   </component>
