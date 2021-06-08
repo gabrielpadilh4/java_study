@@ -66,6 +66,10 @@ public class DAO<E> {
         return query.getResultList();
     }
 
+    public E getById(Object id){
+        return em.find(entity, id);
+    }
+
     public void close() {
         em.close();
     }

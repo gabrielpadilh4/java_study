@@ -1,10 +1,10 @@
-package com.github.gabrielpadilh4.model.oneToOne;
+package com.github.gabrielpadilh4.model.OneToOne;
 
 import javax.persistence.*;
 
 @Entity
-@Table(name = "customers")
-public class Customer {
+@Table(name = "seats")
+public class Seat {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -12,16 +12,15 @@ public class Customer {
 
     private String name;
 
-    @OneToOne(cascade = CascadeType.PERSIST)
-    @JoinColumn(name = "seat_id", unique = true)
-    private Seat seat;
+    @OneToOne(mappedBy = "seat") // bidirectional mapping
+    private Customer customer;
 
-    public Customer() {
+    public Seat() {
     }
 
-    public Customer(String name, Seat seat) {
+    public Seat(String name) {
+        super();
         this.name = name;
-        this.seat = seat;
     }
 
     public long getId() {
@@ -40,11 +39,12 @@ public class Customer {
         this.name = name;
     }
 
-    public Seat getSeat() {
-        return seat;
+    public Customer getCustomer() {
+        return customer;
     }
 
-    public void setSeat(Seat seat) {
-        this.seat = seat;
+    public void setCustomer(Customer customer) {
+        this.customer = customer;
     }
+
 }

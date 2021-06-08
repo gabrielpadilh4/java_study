@@ -8,8 +8,8 @@
 
         <class>com.github.gabrielpadilh4.model.User</class>
         <class>com.github.gabrielpadilh4.model.Product</class>
-        <class>com.github.gabrielpadilh4.model.oneToOne.Customer</class>
-        <class>com.github.gabrielpadilh4.model.oneToOne.Seat</class>
+        <class>com.github.gabrielpadilh4.model.OneToOne.Customer</class>
+        <class>com.github.gabrielpadilh4.model.OneToOne.Seat</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"

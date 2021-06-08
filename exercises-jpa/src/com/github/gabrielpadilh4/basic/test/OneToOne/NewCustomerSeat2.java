@@ -1,8 +1,8 @@
 package com.github.gabrielpadilh4.basic.test.OneToOne;
 
 import com.github.gabrielpadilh4.infra.DAO;
-import com.github.gabrielpadilh4.model.oneToOne.Customer;
-import com.github.gabrielpadilh4.model.oneToOne.Seat;
+import com.github.gabrielpadilh4.model.OneToOne.Customer;
+import com.github.gabrielpadilh4.model.OneToOne.Seat;
 
 public class NewCustomerSeat2 {
 

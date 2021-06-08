@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bf35fb8-8b9d-44fb-95aa-b18ac7fad1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/oneToOne/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/oneToOne/Seat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/GetCustomerSeat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/oneToOne/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/OneToOne/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/oneToOne/Seat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/OneToOne/Seat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,13 +54,13 @@
       <recent name="com.github.gabrielpadilh4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewCustomerSeat2">
-    <configuration name="DeleteUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.DeleteUser" />
+  <component name="RunManager" selected="Application.GetCustomerSeat">
+    <configuration name="GetCustomerSeat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.OneToOne.GetCustomerSeat" />
       <module name="exercises-jpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.*" />
+          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.OneToOne.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,11 +122,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetCustomerSeat" />
         <item itemvalue="Application.NewCustomerSeat2" />
         <item itemvalue="Application.NewCustomerSeat1" />
         <item itemvalue="Application.GetProducts" />
         <item itemvalue="Application.NewProduct" />
-        <item itemvalue="Application.DeleteUser" />
       </list>
     </recent_temporary>
   </component>
