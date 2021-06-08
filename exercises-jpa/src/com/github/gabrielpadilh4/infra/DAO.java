@@ -49,7 +49,7 @@ public class DAO<E> {
         return this;
     }
 
-    public List<E> getAll(){
+    public List<E> getAll() {
         return getAll(10, 0);
     }
 

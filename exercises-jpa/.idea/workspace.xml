@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bf35fb8-8b9d-44fb-95aa-b18ac7fad1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/GetProducts.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/NewProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/ProductDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/OneToOne/NewCustomerSeat2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/oneToOne/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/oneToOne/Seat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,7 @@
       <recent name="com.github.gabrielpadilh4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GetProducts">
+  <component name="RunManager" selected="Application.NewCustomerSeat2">
     <configuration name="DeleteUser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.DeleteUser" />
       <module name="exercises-jpa" />
@@ -79,6 +80,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NewCustomerSeat1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.OneToOne.NewCustomerSeat1" />
+      <module name="exercises-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.OneToOne.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NewCustomerSeat2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.OneToOne.NewCustomerSeat2" />
+      <module name="exercises-jpa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.OneToOne.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="NewProduct" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.NewProduct" />
       <module name="exercises-jpa" />
@@ -92,39 +119,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UpdateUser1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.UpdateUser1" />
-      <module name="exercises-jpa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UpdateUser2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.UpdateUser2" />
-      <module name="exercises-jpa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NewCustomerSeat2" />
+        <item itemvalue="Application.NewCustomerSeat1" />
         <item itemvalue="Application.GetProducts" />
         <item itemvalue="Application.NewProduct" />
         <item itemvalue="Application.DeleteUser" />
-        <item itemvalue="Application.UpdateUser2" />
-        <item itemvalue="Application.UpdateUser1" />
       </list>
     </recent_temporary>
   </component>
