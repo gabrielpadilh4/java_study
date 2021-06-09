@@ -15,7 +15,7 @@ public class PurchaseOrder {
     @Column(nullable = false)
     private Date date;
 
-    @OneToMany(mappedBy = "purchaseOrder")
+    @OneToMany(mappedBy = "purchaseOrder") // default fetch type is LAZY
     private List<PurchaseOrderItem> items;
 
     public PurchaseOrder() {

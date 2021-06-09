@@ -15,7 +15,7 @@ public class PurchaseOrderItem {
     @ManyToOne
     private PurchaseOrder purchaseOrder;
 
-    @ManyToOne
+    @ManyToOne // default fetch type is EAGER
     private Product product;
 
     @Column(nullable = false)
