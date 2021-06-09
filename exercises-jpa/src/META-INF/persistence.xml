@@ -10,6 +10,8 @@
         <class>com.github.gabrielpadilh4.model.Product</class>
         <class>com.github.gabrielpadilh4.model.OneToOne.Customer</class>
         <class>com.github.gabrielpadilh4.model.OneToOne.Seat</class>
+        <class>com.github.gabrielpadilh4.model.OneToMany.PurchaseOrder</class>
+        <class>com.github.gabrielpadilh4.model.OneToMany.PurchaseOrderItem</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
