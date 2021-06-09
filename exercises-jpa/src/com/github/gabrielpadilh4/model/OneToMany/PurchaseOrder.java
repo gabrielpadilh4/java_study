@@ -2,6 +2,7 @@ package com.github.gabrielpadilh4.model.OneToMany;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "purchase_orders")
@@ -13,6 +14,9 @@ public class PurchaseOrder {
 
     @Column(nullable = false)
     private Date date;
+
+    @OneToMany(mappedBy = "purchaseOrder")
+    private List<PurchaseOrderItem> items;
 
     public PurchaseOrder() {
         this(new Date());
@@ -36,5 +40,13 @@ public class PurchaseOrder {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public List<PurchaseOrderItem> getItems() {
+        return items;
+    }
+
+    public void setItems(List<PurchaseOrderItem> items) {
+        this.items = items;
     }
 }
