@@ -12,6 +12,10 @@
         <class>com.github.gabrielpadilh4.model.OneToOne.Seat</class>
         <class>com.github.gabrielpadilh4.model.OneToMany.PurchaseOrder</class>
         <class>com.github.gabrielpadilh4.model.OneToMany.PurchaseOrderItem</class>
+        <class>com.github.gabrielpadilh4.model.ManyToMany.Uncle</class>
+        <class>com.github.gabrielpadilh4.model.ManyToMany.Nephew</class>
+        <class>com.github.gabrielpadilh4.model.ManyToMany.Movie</class>
+        <class>com.github.gabrielpadilh4.model.ManyToMany.Actor</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
