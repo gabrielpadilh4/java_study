@@ -14,14 +14,20 @@ public class NewMovieActor {
         Actor actor = new Actor("Mark Hamill");
         Actor actress = new Actor("Carrie Fisher");
 
-        //actor.getMovies().add(movieA);
+        actor.getMovies().add(movieA);
+        actor.getMovies().add(movie);
 
-        movie.addActor(actor);
-        movie.addActor(actress);
+       /* movie.addActor(actor);
+        movie.addActor(actress);*/
 
-        DAO<Movie> dao = new DAO<>();
+       /* DAO<Movie> dao = new DAO<>();
 
-        dao.atomicPersist(movie);
+        dao.atomicPersist(movie);*/
+
+        DAO<Actor> dao1 = new DAO<>();
+
+        dao1.atomicPersist(actor);
+        dao1.atomicPersist(actress);
 
     }
 }

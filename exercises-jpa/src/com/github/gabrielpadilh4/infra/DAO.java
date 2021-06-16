@@ -49,6 +49,18 @@ public class DAO<E> {
         return this;
     }
 
+    public List<E> query(String queryName, Object... params) {
+
+        TypedQuery<E> query = em.createNamedQuery(queryName, entity);
+
+        for(int i = 0; i < params.length; i +=2){
+            query.setParameter(params[i].toString(), params[i+1]);
+
+        }
+
+        return query.getResultList();
+    }
+
     public List<E> getAll() {
         return getAll(10, 0);
     }

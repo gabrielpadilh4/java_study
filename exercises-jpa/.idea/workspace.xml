@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7bf35fb8-8b9d-44fb-95aa-b18ac7fad1ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/ManyToMany/NewMovieActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/ManyToMany/NewUncleNephew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/ManyToMany/Actor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/ManyToMany/Movie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/ManyToMany/Nephew.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/ManyToMany/Uncle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/named_query/GetMovies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/META-INF/queries.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/META-INF/queries.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/ManyToMany/NewMovieActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/basic/test/ManyToMany/NewMovieActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/infra/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/ManyToMany/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/github/gabrielpadilh4/model/ManyToMany/Movie.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +61,13 @@
       <recent name="com.github.gabrielpadilh4" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NewMovieActor">
-    <configuration name="GetCustomerSeat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.OneToOne.GetCustomerSeat" />
+  <component name="RunManager" selected="Application.GetMovies">
+    <configuration name="GetMovies" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.gabrielpadilh4.basic.test.named_query.GetMovies" />
       <module name="exercises-jpa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.OneToOne.*" />
+          <option name="PATTERN" value="com.github.gabrielpadilh4.basic.test.named_query.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.GetMovies" />
         <item itemvalue="Application.NewMovieActor" />
-        <item itemvalue="Application.NewUncleNephew" />
         <item itemvalue="Application.GetPurchaseOrder" />
+        <item itemvalue="Application.NewUncleNephew" />
         <item itemvalue="Application.NewPurchaseOrder" />
-        <item itemvalue="Application.GetCustomerSeat" />
       </list>
     </recent_temporary>
   </component>
