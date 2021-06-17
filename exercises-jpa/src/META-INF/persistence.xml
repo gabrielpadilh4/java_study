@@ -18,6 +18,8 @@
         <class>com.github.gabrielpadilh4.model.ManyToMany.Nephew</class>
         <class>com.github.gabrielpadilh4.model.ManyToMany.Movie</class>
         <class>com.github.gabrielpadilh4.model.ManyToMany.Actor</class>
+        <class>com.github.gabrielpadilh4.model.inheritance.Student</class>
+        <class>com.github.gabrielpadilh4.model.inheritance.ScholarshipStudent</class>
 
         <properties>
             <property name="javax.persistence.jdbc.driver"
