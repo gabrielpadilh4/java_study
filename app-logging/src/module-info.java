@@ -1,2 +1,3 @@
-module $MODULE_NAME$ {
+module app.logging {
+    exports com.github.gabrielpadilh4;
 }
